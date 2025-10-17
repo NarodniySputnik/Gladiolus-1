@@ -51,8 +51,8 @@
 		)
 		(symbol "AB_IOT_433_1_1"
 			(rectangle
-				(start -7.62 7.62)
-				(end 7.62 -7.62)
+				(start -10.16 7.62)
+				(end 10.16 -7.62)
 				(stroke
 					(width 0)
 					(type default)
@@ -62,7 +62,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 6.35 0)
+				(at -12.7 6.35 0)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -80,7 +80,7 @@
 				)
 			)
 			(pin output line
-				(at -10.16 3.81 0)
+				(at -12.7 3.81 0)
 				(length 2.54)
 				(name "SW"
 					(effects
@@ -98,7 +98,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 0 0)
+				(at -12.7 0 0)
 				(length 2.54)
 				(name "RF_IN"
 					(effects
@@ -134,7 +134,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 6.35 180)
+				(at 12.7 6.35 180)
 				(length 2.54)
 				(name "RX_LED"
 					(effects
@@ -152,7 +152,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 3.81 180)
+				(at 12.7 3.81 180)
 				(length 2.54)
 				(name "TX_LED"
 					(effects
@@ -170,7 +170,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 0 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "ANT"
 					(effects
