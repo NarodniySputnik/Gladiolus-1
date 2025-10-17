@@ -1,4 +1,4 @@
-(footprint "AB-IOT-433"
+(footprint "AB_IOT_433"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")

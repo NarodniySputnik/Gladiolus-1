@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 9.652 0)
+			(at 0 12.192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "AB-IOT-433"
-			(at 0 7.112 0)
+			(at 0 9.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,18 +51,18 @@
 		)
 		(symbol "AB_IOT_433_1_1"
 			(rectangle
-				(start -15.24 5.08)
-				(end 15.24 -15.24)
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0)
-					(type solid)
+					(type default)
 				)
 				(fill
 					(type background)
 				)
 			)
 			(pin power_in line
-				(at -15.24 2.54 0)
+				(at -10.16 6.35 0)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -79,28 +79,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -15.24 0 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at -15.24 -2.54 0)
+				(at -10.16 3.81 0)
 				(length 2.54)
-				(name "SW(NC)"
+				(name "SW"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -115,44 +97,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -15.24 -5.08 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -15.24 -7.62 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at -15.24 -10.16 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "RF_IN"
 					(effects
@@ -170,7 +116,7 @@
 				)
 			)
 			(pin power_in line
-				(at -15.24 -12.7 0)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -179,7 +125,7 @@
 						)
 					)
 				)
-				(number "7"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -188,9 +134,9 @@
 				)
 			)
 			(pin output line
-				(at 15.24 2.54 180)
+				(at 10.16 6.35 180)
 				(length 2.54)
-				(name "RX_LED(NC)"
+				(name "RX_LED"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -206,9 +152,9 @@
 				)
 			)
 			(pin output line
-				(at 15.24 0 180)
+				(at 10.16 3.81 180)
 				(length 2.54)
-				(name "TX_LED(NC)"
+				(name "TX_LED"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -223,44 +169,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 15.24 -2.54 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 15.24 -5.08 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
-				(at 15.24 -7.62 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "ANT"
 					(effects
@@ -270,24 +180,6 @@
 					)
 				)
 				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 15.24 -10.16 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
