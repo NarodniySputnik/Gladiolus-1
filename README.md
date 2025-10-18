@@ -1,5 +1,5 @@
 # Проект Gladiolus-1 (Народный Спутник)
-<div align="center"><img src="https://raw.githubusercontent.com/NarodniySputnik/Gladiolus-1/refs/heads/main/documentation/logo.jpg"></div>
+<div align="center"><img src="https://raw.githubusercontent.com/NarodniySputnik/Gladiolus-1/refs/heads/main/documentation/logo.png"></div>
 
 ## Назначение модуля
 Gladiolus-1 - автономный модуль для приема и передачи изображений в формате SSTV (Slow Scan Television) на малом космическом аппарате (МКА) формата CubeSat
@@ -23,7 +23,6 @@ Gladiolus-1 - автономный модуль для приема и пере�
 - Используемый LDO: REG03
 
 #### Функциональное деление
-
 - Антенный блок 
 - Модемный блок
 - SSTV блок
