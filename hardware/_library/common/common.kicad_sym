@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 11.43 0)
+			(at 0 11.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "AB-IOT-433"
-			(at 0 9.906 0)
+			(at 0 10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
