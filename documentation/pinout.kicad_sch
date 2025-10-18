@@ -1404,7 +1404,7 @@
 			)
 		)
 	)
-	(global_label "LDO3_ADJ"
+	(global_label "LDO3_OUT"
 		(shape passive)
 		(at 146.05 78.74 180)
 		(fields_autoplaced yes)
@@ -1416,7 +1416,7 @@
 		)
 		(uuid "745c6af3-0cc9-4752-a6c2-daa6bac372ba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.8909 78.74 0)
+			(at 134.7418 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1492,7 +1492,7 @@
 			)
 		)
 	)
-	(global_label "LDO1_ADJ"
+	(global_label "LDO1_OUT"
 		(shape passive)
 		(at 146.05 73.66 180)
 		(fields_autoplaced yes)
@@ -1504,7 +1504,7 @@
 		)
 		(uuid "971b842d-98e1-4e6b-b0d4-e86d6c46aac9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.0442 73.66 0)
+			(at 134.7418 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1602,7 +1602,7 @@
 			)
 		)
 	)
-	(global_label "LDO2_ADJ"
+	(global_label "LDO2_OUT"
 		(shape passive)
 		(at 146.05 76.2 180)
 		(fields_autoplaced yes)
@@ -1614,7 +1614,7 @@
 		)
 		(uuid "c42e4773-8989-4996-a2de-46a90a431c67")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.8909 76.2 0)
+			(at 134.7418 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
