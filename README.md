@@ -25,7 +25,7 @@ Our goals:
 We are delighted to welcome anyone who can and wants to contribute to the creation of a real spacecraft to our team!
 
 ## Назначение модуля
-Gladiolus-1 - автономный модуль для приема и передачи изображений в формате SSTV (Slow Scan Television) на малом космическом аппарате (МКА) формата CubeSat
+Gladiolus-1 - автономный модуль для приема и передачи изображений в формате SSTV (Slow Scan TeleVision) на малом космическом аппарате (МКА) формата CubeSat
 
 ## Структура директорий
 - doc - Документы
