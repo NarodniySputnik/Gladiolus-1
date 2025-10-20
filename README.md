@@ -9,10 +9,9 @@
 Наши задачи: 
 
 - Реализовать полный цикл создания малого космического аппарата CubeSat - от проектирования и сборки до запуска и работы на орбите. 
-
 - Предоставить открытые данные и существующие наработки по проекту для всех желающих, вдохновить всех любителей космической тематики и радиолюбителей на разработку и участие в новых интересных технологических проектах. 
-
 - Объединить единомышленников для практической работы в области космических технологий и радиосвязи.
+
 С огромнейшим удовольствием примем в нашу команду всех кто может и хочет приложить руку к созданию реального космического аппарата!
 
 We are a team of amateur radio enthusiasts led by Dmitry "R4UAB" Pashkov!
@@ -21,9 +20,7 @@ We are currently working on the "People's Satellite" project! Our goal is to cre
 Our goals:
 
 - Implement the full development cycle of the CubeSat small spacecraft-from design and assembly to launch and operation in orbit.
-
 - Provide open data and existing project developments to everyone, inspiring all space enthusiasts and radio amateurs to develop and participate in new exciting technological projects.
-
 - Bring together like-minded individuals for practical work in the field of space technology and radio communications.
 
 We are delighted to welcome anyone who can and wants to contribute to the creation of a real spacecraft to our team!
