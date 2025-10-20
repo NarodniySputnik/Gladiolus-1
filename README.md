@@ -2,19 +2,31 @@
 <div align="center"><img src="https://raw.githubusercontent.com/NarodniySputnik/Gladiolus-1/refs/heads/main/doc/img/logo.png"></div>
 
 Мы - команда радиолюбителей-энтузиастов под руководством Дмитрия R4UAB Пашкова!
-В данный момент мы работаем над проектом "Народный спутник"! Наша цель - это создание функционального малого космического аппарата (CubeSat) для популяризации радиолюбительства, как интересного и увлекательного занятия для людей всех возрастов. Проект создаётся полностью на добровольных началах и заинтересованности наших участников. 
+
+В данный момент мы работаем над проектом "Народный спутник"! 
+Наша цель - это создание функционального малого космического аппарата (CubeSat) для популяризации радиолюбительства, как интересного и увлекательного занятия для людей всех возрастов. Проект создаётся полностью на добровольных началах и заинтересованности наших участников. 
+
 Наши задачи: 
+
 • Реализовать полный цикл создания малого космического аппарата Cube Sat— от проектирования и сборки до запуска и работы на орбите. 
+
 • Предоставить открытые данные и существующие наработки по проекту для всех желающих, вдохновить всех любителей космической тематики и радиолюбителей на разработку и участие в новых интересных технологических проектах. 
+
 • Объединить единомышленников для практической работы в области космических технологий и радиосвязи.
 С огромнейшим удовольствием примем в нашу команду всех кто может и хочет приложить руку к созданию реального космического аппарата!
 
+
 We are a team of amateur radio enthusiasts led by Dmitry "R4UAB" Pashkov!
 We are currently working on the "People's Satellite" project! Our goal is to create a functional small spacecraft (CubeSat) to popularize amateur radio as an interesting and engaging activity for people of all ages. The project is being developed entirely on a voluntary basis and based on the passion of our participants.
+
 Our goals:
+
 • Implement the full development cycle of the CubeSat small spacecraft—from design and assembly to launch and operation in orbit.
+
 • Provide open data and existing project developments to everyone, inspiring all space enthusiasts and radio amateurs to develop and participate in new exciting technological projects.
+
 • Bring together like-minded individuals for practical work in the field of space technology and radio communications.
+
 We are delighted to welcome anyone who can and wants to contribute to the creation of a real spacecraft to our team!
 
 ## Назначение модуля
