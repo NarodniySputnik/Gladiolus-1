@@ -1,0 +1,52 @@
+Изображения для трансляции sstv добавляются в очередь (сущность queue). Трансляция возможна только для очереди. При необходимости трансляции одного изображения - созздаём очередь из одного изображения.
+
+Пользовательский интерфейс
+1. Авторизация в системе. 
+
+2. Операция с файлами
+2.1. Получение списка файлов изображений на SD карте. Возвращаемые значения - имена файлов.
+2.2. Загрузка изображения на SD карту из ЦУП. Параметр команды - имя загружаемого файла. Возвращаемое значение "upload filename succesedd"
+exception:
+ - upload cancelled. Try again. Err12
+ - not enough space. Err13
+ - SD card is busy. Err14
+ - uploaded image is too big. Err 17. Обязательна проверка на максимальный размер файла - запрещено создание файла размером более 10Мб
+
+2.3. Удаление файла изображения с SD карты. Параметр команд - имя файла. Возвращаемое значение - результат выполнения команды ("filename deleted" или код ошибки). 
+exception:
+ - file doesnt exist. Err1
+ - file locked. Err2
+
+3. Добавление изображения в очередь вещания. Параметр команды - имя файла. Возвращаемые параметры - порядковый номер добавленного изображения в очереди.
+exception:
+ - reached the maximum amount of images. Err3.
+ - cannot put the file in the queue. Err4. 
+ - file doesnt exist. Err11
+
+4. Получение списка изображений в очереди вещания. Возвращаемые параметры: 
+	1. имя файла изображения, поставленных в очередь вещания sstv
+	2. порядковый номер 
+Если очередь пуста - возвратить "queue is empty"
+
+5. Немежленное начало трансляции - сразу после ввода команды. Возвращаемые параметры - success/код ошибки
+exception:
+ - the queue doesnt exist. Err5
+ - the queue cannot be transmitted. err6
+ - the queue is empty. err7
+
+6. Отложенная трансляция. Параметры команды:
+6.1.Дата и время начала трансляции в unix-формат 
+6.2 Дата и время окончания трансляции
+exception:
+ - the date is in the past and cannot be transmitted. Err8
+ - the date is more than in nearest 15 days. Err9 (нельзя запланировать трансляцию далее, чем на 15 дней вперёд ввиду сдвига расписания пролётов спутника над конкретным местом).
+ - invalid format, please, use unix-format. Err10
+ - datetime of the end of the translation is earlier than the datetime of the begining of the translation. Err15
+ - Too long translation. Err16 (в случае, если трансляция занимает неоправданно долгое время - предлагаю выставить лимит в 10 суток). 
+
+7. Очистка очереди изображений.
+exception:
+ - queue cannot be purdged. Err12. Очередь не может быть очищена
+ - queue is empty. Err7
+ 
+8. 
