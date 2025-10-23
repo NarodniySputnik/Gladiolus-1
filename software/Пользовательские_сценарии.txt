@@ -1,4 +1,4 @@
-Изображения для трансляции sstv добавляются в очередь (сущность queue). Трансляция возможна только для очереди. При необходимости трансляции одного изображения - созздаём очередь из одного изображения.
+Изображения для трансляции sstv добавляются в очередь (сущность queue). Трансляция возможна только для очереди. При необходимости трансляции одного изображения - создаём очередь из одного изображения.
 
 Пользовательский интерфейс
 1. Авторизация в системе. 
@@ -14,23 +14,23 @@ exception:
 
 2.3. Удаление файла изображения с SD карты. Параметр команд - имя файла. Возвращаемое значение - результат выполнения команды ("filename deleted" или код ошибки). 
 exception:
- - file doesnt exist. Err1
+ - file doesn't exist. Err1
  - file locked. Err2
 
 3. Добавление изображения в очередь вещания. Параметр команды - имя файла. Возвращаемые параметры - порядковый номер добавленного изображения в очереди.
 exception:
  - reached the maximum amount of images. Err3.
  - cannot put the file in the queue. Err4. 
- - file doesnt exist. Err11
+ - file doesn't exist. Err11
 
 4. Получение списка изображений в очереди вещания. Возвращаемые параметры: 
 	1. имя файла изображения, поставленных в очередь вещания sstv
 	2. порядковый номер 
 Если очередь пуста - возвратить "queue is empty"
 
-5. Немежленное начало трансляции - сразу после ввода команды. Возвращаемые параметры - success/код ошибки
+5. Немедленное начало трансляции - сразу после ввода команды. Возвращаемые параметры - success/код ошибки
 exception:
- - the queue doesnt exist. Err5
+ - the queue doesn't exist. Err5
  - the queue cannot be transmitted. err6
  - the queue is empty. err7
 
@@ -41,12 +41,10 @@ exception:
  - the date is in the past and cannot be transmitted. Err8
  - the date is more than 15 days in the future. Err9 (нельзя запланировать трансляцию далее, чем на 15 дней вперёд ввиду сдвига расписания пролётов спутника над конкретным местом).
  - invalid format, please, use unix-format. Err10
- - datetime of the end of the broadcast is earlier than the datetime of the begining of the broadcast. Err15
+ - datetime of the end of the broadcast is earlier than the datetime of the beginning of the broadcast. Err15
  - Too long broadcast. Err16 (в случае, если трансляция занимает неоправданно долгое время - предлагаю выставить лимит в 10 суток). 
 
 7. Очистка очереди изображений.
 exception:
- - queue cannot be purdged. Err12. Очередь не может быть очищена
+ - queue cannot be purged. Err12. Очередь не может быть очищена
  - queue is empty. Err7
- 
-8. 
