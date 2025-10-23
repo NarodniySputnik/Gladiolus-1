@@ -109,46 +109,31 @@ Gladiolus-1 - автономный модуль для приема и пере�
 - Этот пакет в зависимости от его содержания может быть или командой управления или данными
 
 
-### Состав команды
-### Team composition
+## Состав команды | Team composition
 
-#### Руководитель проекта
-#### Team leader
+### Руководитель проекта | Team leader
+- @r4uab
 
-@r4uab
+### Главный Конструктор | Chief Designer
+- AnatoliySV
 
-#### Главный Конструктор 
-#### Chief Designer
+### Разработка антенны | Antenna development
+- @stellar_alice
+- @SV2HWM
+- @Esprit_bel
 
-AnatoliySV
+### Разработка радиотракта | Radio path development
+- @Alexey_Hanekawa
+- @ub1qbm
+- @PhaseShifting
 
-#### Разработка антенны
-#### Antenna development
+### Экспертная команда | Expert team
+- @R2FAL
+- @baskiton
+- @RA3PPY
 
-@stellar_alice
-@SV2HWM
-@Esprit_bel
+### Технические писатели | Technical writers
+- @Esprit_bel
 
-#### Разработка радиотракта
-#### Radio path development
-
-@Alexey_Hanekawa
-@ub1qbm
-@PhaseShifting
-
-#### Экспертная команда
-#### Expert team
-
-@R2FAL
-@baskiton
-@RA3PPY
-
-#### Технические писатели
-#### Technical writers
-
-@Esprit_bel
-
-#### Программисты
-#### Programmers
-
-@cugadese
+### Программисты | Programmers
+- @cugadese
