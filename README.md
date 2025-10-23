@@ -126,6 +126,7 @@ Gladiolus-1 - автономный модуль для приема и пере�
 - @Alexey_Hanekawa
 - @ub1qbm
 - @PhaseShifting
+- @ub8qbd
 
 ### Экспертная команда | Expert team
 - @R2FAL
