@@ -123,7 +123,6 @@ Gladiolus-1 - автономный модуль для приема и пере�
 - @Esprit_bel
 
 ### Разработка радиотракта | Radio path development
-- @Alexey_Hanekawa
 - @ub1qbm
 - @PhaseShifting
 - @ub8qbd
