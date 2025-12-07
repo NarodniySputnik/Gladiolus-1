@@ -1,3 +1,302 @@
+Technical Specifications
+
+for the Development of a Motherboard Power Management Subsystem
+
+---
+
+1. Name and Scope of Application
+
+1.1. Name: Power Management and Monitoring Subsystem (PMMS) of the Motherboard
+1.2. Scope of Application: The subsystem is an integrated part of the motherboard (system board) of a small spacecraft. Designed for centralized management of +5V power supply to payload module connection slots.
+
+---
+
+2. Basis for Development
+
+The basis for development is the necessity to implement a unified power management system on the motherboard, ensuring coordination of all payload modules and compliance with the reliability requirements of space equipment.
+
+---
+
+3. Purpose and Objective of the Development
+
+3.1. Development Objective: Creation of an integrated power management system with centralized control and coordination of all payload modules.
+3.2. Purpose:
+
+· Centralized control of payload power from the motherboard controller
+· Coordination of module power-on/power-off sequences
+· Real-time monitoring of system power consumption
+· Optimization of the spacecraft's energy balance
+· Protection of the onboard power network from payload module failures
+· Ensuring radiation hardness of the power system
+
+---
+
+4. Technical Requirements
+
+4.1. Electrical Parameters
+
+4.1.1. Input Power Bus:
+
+· Input voltage range: 3.2 V ... 8.4 V (from Li-ion batteries or the Electrical Power System)
+· Maximum input current: ≤ 1 A (limitation of consumption from the primary source)
+· Nominal operating voltage for the subsystem: +5 V ±5% (after internal regulator)
+· Subsystem's own consumption in the off state: ≤ 100 µA
+· Input Overvoltage Protection: automatic shutdown at voltage > 9.0 V
+· Undervoltage Protection: shutdown at voltage < 3.0 V
+· Input Reverse Polarity Protection:
+  · Operational capability under reverse polarity: up to -12 V
+  · Leakage current under reverse polarity: ≤ 10 µA
+  · Protection response time: ≤ 1 µs
+  · Automatic recovery after reverse polarity elimination
+
+4.1.2. Output Power Channels:
+
+· Number of independent channels: at least 4
+· Voltage on each channel: +5 V ±5%
+· Nominal current per channel: up to 1 A
+· Peak current per channel (short-term): up to 1.5 A
+· Total current of all channels: limited by the 1 A input limiter
+· Voltage drop in the on-state: ≤ 150 mV at 1 A current
+· Leakage current in the off state: ≤ 10 µA
+· Conversion efficiency (input 3.2-8.4V → output 5V): ≥ 85% at 0.5A load
+
+4.1.3. Control Interface:
+
+· Control via a unified motherboard controller
+· Primary communication interface: I2C (100 kHz/400 kHz)
+· Backup interface: SPI (up to 1 MHz)
+· Logic levels: 3.3 V
+· Addressing within the common motherboard address map
+
+4.2. Functional Requirements
+
+4.2.1. Centralized Control:
+
+· Software control of channel power-on/power-off sequence
+· Creation of power groups with programmable time delays (1-1000 ms)
+· Centralized control of power-saving modes
+· Unified system for emergency situation handling
+· Priority control of critical systems
+· Dynamic limitation of total consumption within 1A from the input
+
+4.2.2. Protection (implemented for each channel):
+
+· Overload and Short-Circuit Protection:
+  · Trigger threshold: programmable, 1.0 - 1.5 A
+  · Response time: ≤ 100 µs
+  · Recovery mode: programmable (latch-off/auto-retry)
+  · Auto-retry delay: programmable, 1-60 sec
+· Inrush Current Limiting:
+  · Maximum charge current: ≤ 1.5 A
+  · Rise time: programmable, 1 - 100 ms
+· Reverse Current Protection
+· Output Load Reverse Polarity Protection:
+  · Protection against reverse connection of the load
+  · Current limitation under reverse polarity: ≤ 100 mA
+  · Automatic channel shutdown upon detection of reverse polarity
+  · Event logging in the error journal
+
+4.2.3. Monitoring and Diagnostics:
+
+· Channel Status: On/Off/Fault/Overload/Reverse Polarity
+· Consumption Current:
+  · Resolution: ≥ 10 mA
+  · Accuracy: ±5% across the entire range
+  · Update rate: ≥ 10 Hz
+· Output Voltage:
+  · Accuracy: ±3%
+  · Resolution: ≥ 20 mV
+· Input Voltage:
+  · Accuracy: ±2%
+  · Resolution: ≥ 50 mV
+· Temperature of Key Components:
+  · Accuracy: ±3°C
+  · Range: -40°C ... +125°C
+· Fault Flags: Overload, Short Circuit, Control Error, Overheat, Input/Output Reverse Polarity
+· Event Counters: power-on cycles, protection triggers, reverse polarity errors
+
+4.3. Radiation Hardness Requirements
+
+4.3.1. Total Ionizing Dose (TID) Tolerance:
+
+· Tolerance level: ≥ 20 krad (Si)
+· Preservation of functionality after dose accumulation
+· Allowable parameter degradation: ≤ 20%
+
+4.3.2. Single Event Effects (SEE) Tolerance:
+
+· SEL (Latch-up):
+  · LET threshold: ≥ 75 MeV·cm²/mg
+  · Protection against destructive latch-ups
+· SEU (Upset):
+  · ECC/TMR protection for critical registers
+  · Watchdog timer for recovery from upsets
+· SEFI (Functional Interrupt):
+  · Recovery time: ≤ 1 sec
+· SET (Transient):
+  · Analog signal filtering
+  · Protection against digital signal bounce
+
+4.3.3. Component Base:
+
+· Preference for components with qualification:
+  · QML Class V/Y - highest priority
+  · Automotive AEC-Q100 Grade 1 - acceptable with confirmed radiation hardness
+· Prohibition on using BGA packages
+· Recommended packages: LQFP, TQFP, SOIC, DFN/QFN
+
+4.4. Integration Requirements for the Motherboard
+
+4.4.1. Thermal Regime:
+
+· Maximum component temperature: ≤ +125°C
+· Effective heat dissipation to the system radiator
+· Thermal control of key elements
+· Temperature margin: ≥ 15°C from maximum
+
+4.4.2. Electromagnetic Compatibility:
+
+· Separation of analog and digital grounds
+· Protection of analog circuits from digital noise
+· Decoupling capacitors near each load:
+  · Ceramic: 100 nF
+  · Tantalum: 10-100 µF
+· Shielding of sensitive circuits
+
+4.4.3. Constructive Requirements:
+
+· Component Base: Surface-mount packages
+· Placement: Grouping in a separate board sector
+· Power Traces:
+  · Width: calculated with a margin of ≥ 30%
+  · Copper thickness: ≥ 35 µm
+· Conformal Coating: Acrylic or polyurethane
+
+---
+
+5. Software Requirements
+
+5.1. Management Controller Firmware
+
+5.1.1. Basic Functionality:
+
+· Unified algorithm for controlling all channels
+· Centralized interrupt handling
+· System power consumption management
+· Emergency situation handling
+
+5.1.2. Advanced Functions:
+
+· Startup Sequences: programmable startup scenarios
+· System Priorities: management of critical loads
+· Power Consumption: statistics keeping and forecasting
+· Diagnostics: self-test and channel testing
+
+5.1.3. Software Reliability:
+
+· Watchdog timer with hardware reset
+· Memory integrity check (CRC)
+· Event logging
+· Backup control algorithms
+
+5.2. Communication Interfaces
+
+5.2.1. API for Main Processor:
+
+· Standardized command set
+· Reading real-time telemetry
+· Managing operational modes
+· Diagnostics and maintenance
+
+5.2.2. Data Formats:
+
+· Standardized telemetry formats
+· Structured event logs
+· Calibration coefficients
+· Configuration parameters
+
+5.2.3. Service Protocols:
+
+· Firmware update
+· Calibration of measurement channels
+· Functionality testing
+· Fault diagnostics
+
+---
+
+6. Reliability Requirements
+
+6.1. Reliability Metrics
+
+· Mean Time Between Failures (MTBF): ≥ 100,000 hours
+· Probability of failure-free operation (over 3 years): ≥ 0.95
+· Active lifetime: ≥ 3 years
+
+6.2. Operational Requirements
+
+· Operating temperature range: -40°C ... +85°C
+· Vibration resistance:
+  · Frequency: 20-2000 Hz
+  · Acceleration: up to 20 g
+· Shock resistance: up to 100 g, duration 11 ms
+· Humidity: 0-100% (without condensation)
+
+6.3. Redundancy and Fault Tolerance
+
+· Redundancy of critical control circuits
+· Automatic switching to backup algorithms
+· Maintaining operability with single faults
+· Isolation of faulty channels
+
+---
+
+7. Testing Requirements
+
+7.1. Test Types
+
+7.1.1. Electrical Tests:
+
+· Parameter verification under normal conditions
+· Testing under extreme conditions
+· Verification of protection functions
+· Consumption measurement
+· Reverse Polarity Tests: verification of protection under reverse connection of ±12V
+
+7.2. Acceptance Criteria
+
+· Conformance to all electrical parameters
+· Absence of degradation after testing
+· Preservation of functionality under extreme conditions
+· Conformance to reliability requirements
+· Successful passing of reverse polarity tests without damage
+
+---
+
+8. Scope and Content of Work
+
+8.1. Development Stages
+
+1. Analysis and Design:
+   · Development of the schematic diagram
+   · Modeling of key nodes
+   · Development of control algorithms
+2. Design Documentation:
+   · PCB layout as part of the motherboard
+   · Development of design documentation
+   · Preparation of manufacturing files
+3. Software:
+   · Development of firmware for the management controller
+   · Creation of test software
+   · Development of diagnostic utilities
+4. Manufacturing and Debugging:
+   · Manufacturing of a prototype
+   · Debugging and testing
+   · Component qualification
+5. Testing:
+   · Preliminary tests
+   · Qualification tests
+   · Acceptance tests
+
 # Техническое задание 
 ## на разработку подсистемы управления питанием материнской платы
 
