@@ -1,0 +1,8 @@
+{
+    "name": "LoRa-STM32",
+    "version": "1.0.0",
+    "description": "LoRa SX1276/SX1278 library for STM32 with FSK support for SSTV",
+    "keywords": "lora, sx1276, sx1278, stm32, fsk, sstv",
+    "frameworks": "stm32cube",
+    "platforms": "ststm32"
+}
