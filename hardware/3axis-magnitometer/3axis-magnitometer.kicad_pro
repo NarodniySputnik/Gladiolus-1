@@ -188,6 +188,7 @@
       ],
       "track_widths": [
         0.0,
+        0.2,
         0.3,
         0.4,
         1.0,
@@ -467,6 +468,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -663,6 +665,10 @@
     [
       "83e74227-fab1-47ae-b3ea-3e1f54a43bc9",
       "level_translator"
+    ],
+    [
+      "be6038e0-c8de-46ff-af13-cf0ae52994ef",
+      "imu"
     ]
   ],
   "text_variables": {}
