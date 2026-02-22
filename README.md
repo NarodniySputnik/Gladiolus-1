@@ -570,7 +570,7 @@ JTAG для низкоуровневой отладки<br>
 
 ### Технические писатели | Technical writers
 - @Esprit_bel
-- @alisialightness
+
 
 ### Программисты | Programmers
 - @cugadese
