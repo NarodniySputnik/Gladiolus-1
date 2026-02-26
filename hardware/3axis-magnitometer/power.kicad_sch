@@ -1266,7 +1266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20869e41-9548-4e5d-9506-9ba5fe9b7ded")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 148.59 104.1399 0)
 			(effects
 				(font
@@ -1320,7 +1320,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -1336,7 +1336,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29bf8e87-e4aa-433f-8d64-c0dfd863610d")
-		(property "Reference" "C15"
+		(property "Reference" "C16"
 			(at 148.59 85.0899 0)
 			(effects
 				(font
@@ -1390,7 +1390,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C15")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -1406,7 +1406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c115d23-c19e-4a53-9591-9a08953ff171")
-		(property "Reference" "C24"
+		(property "Reference" "C25"
 			(at 212.09 104.1399 0)
 			(effects
 				(font
@@ -1460,7 +1460,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C24")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -1476,7 +1476,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b351f9e-a183-4a59-8ede-c2930e2d6c04")
-		(property "Reference" "C27"
+		(property "Reference" "C28"
 			(at 226.06 85.0899 0)
 			(effects
 				(font
@@ -1530,7 +1530,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C27")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -1546,7 +1546,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50c0372c-8028-4f99-930f-cd119981222c")
-		(property "Reference" "C25"
+		(property "Reference" "C26"
 			(at 215.9 85.0899 0)
 			(effects
 				(font
@@ -1600,7 +1600,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C25")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -1683,7 +1683,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7aef7534-9492-4f15-8528-05eb1b315284")
-		(property "Reference" "C17"
+		(property "Reference" "C18"
 			(at 158.75 85.0899 0)
 			(effects
 				(font
@@ -1737,7 +1737,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C17")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -1824,7 +1824,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94a0f34e-7812-48b4-9c4d-03ce56cd6410")
-		(property "Reference" "C26"
+		(property "Reference" "C27"
 			(at 222.25 104.1399 0)
 			(effects
 				(font
@@ -1878,7 +1878,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C26")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -1894,7 +1894,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a75e078d-9005-46e0-87c9-5ac48b4a1184")
-		(property "Reference" "C22"
+		(property "Reference" "C23"
 			(at 201.93 104.1399 0)
 			(effects
 				(font
@@ -1948,7 +1948,7 @@
 		(instances
 			(project ""
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C22")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -1964,7 +1964,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b63b4ce6-88d0-48a4-aaf2-56a2ad6b3a30")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 158.75 104.1399 0)
 			(effects
 				(font
@@ -2018,7 +2018,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -2101,7 +2101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "caa79b68-9b8c-4afa-a878-2475176bf4c3")
-		(property "Reference" "C20"
+		(property "Reference" "C21"
 			(at 168.91 85.0899 0)
 			(effects
 				(font
@@ -2155,7 +2155,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C20")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -2242,7 +2242,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ece3f3ea-24f8-4857-abdb-89d36f72b014")
-		(property "Reference" "C23"
+		(property "Reference" "C24"
 			(at 205.74 85.0899 0)
 			(effects
 				(font
@@ -2296,7 +2296,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C23")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -2312,7 +2312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5c4744f-3b97-4660-95f0-21672dad3f64")
-		(property "Reference" "C21"
+		(property "Reference" "C22"
 			(at 168.91 104.1399 0)
 			(effects
 				(font
@@ -2366,7 +2366,7 @@
 		(instances
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/aa85cf22-72ca-4fb8-a4da-aecf61471964"
-					(reference "C21")
+					(reference "C22")
 					(unit 1)
 				)
 			)

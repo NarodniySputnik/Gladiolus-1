@@ -529,6 +529,14 @@
 		(at 144.78 82.55)
 		(uuid "ac81286d-81a4-4229-81ef-d3d47e75179c")
 	)
+	(no_connect
+		(at 195.58 80.01)
+		(uuid "d5a757ea-7235-45ae-9165-f23619ca05ab")
+	)
+	(no_connect
+		(at 195.58 77.47)
+		(uuid "fc2746aa-9516-41a5-9fc8-945cb5a260d5")
+	)
 	(wire
 		(pts
 			(xy 160.02 105.41) (xy 160.02 100.33)
@@ -769,28 +777,6 @@
 		)
 		(uuid "f74e9dde-c046-4815-ab55-0da3c4bd0015")
 	)
-	(hierarchical_label "INT1"
-		(shape output)
-		(at 195.58 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "07a3960c-ac26-4941-bfb0-d635155d9773")
-	)
-	(hierarchical_label "INT2"
-		(shape output)
-		(at 195.58 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "15fcc2d5-baa5-4d46-8a8d-274f0ead7759")
-	)
 	(hierarchical_label "SCL"
 		(shape input)
 		(at 130.81 90.17 180)
@@ -855,7 +841,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "26f9b96a-9dd4-40ed-9634-f8fbecd52cd9")
-		(property "Reference" "C32"
+		(property "Reference" "C35"
 			(at 175.514 95.25 90)
 			(effects
 				(font
@@ -913,7 +899,7 @@
 			)
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/be6038e0-c8de-46ff-af13-cf0ae52994ef"
-					(reference "C32")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -928,7 +914,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c55ff87-32a7-404f-8d66-f98d449a3086")
-		(property "Reference" "C33"
+		(property "Reference" "C36"
 			(at 185.674 95.25 90)
 			(effects
 				(font
@@ -986,7 +972,7 @@
 			)
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/be6038e0-c8de-46ff-af13-cf0ae52994ef"
-					(reference "C33")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -1002,7 +988,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ba0d5f5-e739-453c-a8df-a57b572c24ba")
-		(property "Reference" "U9"
+		(property "Reference" "U11"
 			(at 162.1633 100.33 0)
 			(effects
 				(font
@@ -1099,7 +1085,7 @@
 			)
 			(project ""
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/be6038e0-c8de-46ff-af13-cf0ae52994ef"
-					(reference "U9")
+					(reference "U11")
 					(unit 1)
 				)
 			)

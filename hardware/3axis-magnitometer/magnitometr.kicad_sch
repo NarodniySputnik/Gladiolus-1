@@ -868,7 +868,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3eb63e52-6a7a-4d65-86dc-d969ab0f6c05")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 121.92 77.216 0)
 			(effects
 				(font
@@ -926,7 +926,7 @@
 			)
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/0bdc1534-3886-4ec0-96c3-23dabfd87e22"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -1014,7 +1014,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c5fa4b77-8d79-4609-9264-0178c73b66e7")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 132.08 77.216 0)
 			(effects
 				(font
@@ -1072,7 +1072,7 @@
 			)
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/0bdc1534-3886-4ec0-96c3-23dabfd87e22"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -1104,7 +1104,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MODULE"
+		(property "Footprint" "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y"
 			(at 157.48 63.5 0)
 			(effects
 				(font
@@ -1189,7 +1189,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee58e80d-7381-4bd6-813e-2cbe37c9bdf8")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 165.1 85.0899 0)
 			(effects
 				(font
@@ -1249,7 +1249,7 @@
 			)
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/0bdc1534-3886-4ec0-96c3-23dabfd87e22"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)

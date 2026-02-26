@@ -921,7 +921,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "32a7820e-f353-4f65-bc5e-e91501c7fd31")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 229.87 71.374 0)
 			(effects
 				(font
@@ -979,7 +979,7 @@
 			)
 			(project ""
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/a46e14a1-6a3b-4c39-b96c-ca31b85d9e43"
-					(reference "C5")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -1069,7 +1069,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e68625d6-b636-4ad0-8028-9e61ba13793d")
-		(property "Reference" "C4"
+		(property "Reference" "C5"
 			(at 214.9078 70.8881 0)
 			(effects
 				(font
@@ -1127,7 +1127,7 @@
 			)
 			(project "3axis-magnitometer"
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/a46e14a1-6a3b-4c39-b96c-ca31b85d9e43"
-					(reference "C4")
+					(reference "C5")
 					(unit 1)
 				)
 			)
