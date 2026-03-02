@@ -144,6 +144,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at -3.81 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FerriteBead"
+				(at 3.81 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_0_1"
+				(polyline
+					(pts
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.2192)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Sensor_Motion:LSM6DS3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -486,12 +635,6 @@
 		)
 	)
 	(junction
-		(at 181.61 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2b4ade38-fb11-46f1-830f-db4df5da60ed")
-	)
-	(junction
 		(at 191.77 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -510,6 +653,12 @@
 		(uuid "93a44abc-22e0-48ab-8ce7-bbe0450c7478")
 	)
 	(junction
+		(at 200.66 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99a5acb8-eb78-4691-a15d-43a971e89e64")
+	)
+	(junction
 		(at 191.77 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -520,6 +669,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9da6eaf-99be-4f08-afa4-ba39a430e990")
+	)
+	(junction
+		(at 200.66 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0938cb4-414f-4aaa-80c6-9fa49d7e35cd")
+	)
+	(junction
+		(at 181.61 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de49781a-16dd-4387-b025-2f36ac2cc86c")
 	)
 	(no_connect
 		(at 144.78 80.01)
@@ -569,7 +730,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 105.41) (xy 195.58 105.41)
+			(xy 191.77 105.41) (xy 200.66 105.41)
 		)
 		(stroke
 			(width 0)
@@ -579,7 +740,17 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 60.96) (xy 181.61 91.44)
+			(xy 200.66 55.88) (xy 200.66 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18458132-a6c0-41b6-ab32-b22faf9d69c4")
+	)
+	(wire
+		(pts
+			(xy 181.61 60.96) (xy 181.61 67.31)
 		)
 		(stroke
 			(width 0)
@@ -616,6 +787,16 @@
 			(type default)
 		)
 		(uuid "2e3ab6ba-0321-4185-92cb-671ac93d768c")
+	)
+	(wire
+		(pts
+			(xy 200.66 99.06) (xy 200.66 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eea2a70-9034-4a5c-a6a2-a0864094e040")
 	)
 	(wire
 		(pts
@@ -679,6 +860,26 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 67.31) (xy 218.44 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bb0b0c0-9e54-4e61-9a32-fe45c5bff382")
+	)
+	(wire
+		(pts
+			(xy 200.66 105.41) (xy 218.44 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ed16215-15d3-4245-a072-ce472f921ed2")
+	)
+	(wire
+		(pts
 			(xy 191.77 99.06) (xy 191.77 105.41)
 		)
 		(stroke
@@ -686,6 +887,36 @@
 			(type default)
 		)
 		(uuid "903ed18a-d745-4222-8794-73259965a276")
+	)
+	(wire
+		(pts
+			(xy 181.61 67.31) (xy 207.01 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7f6dcb7-f172-43e7-971a-9dff25de4c8e")
+	)
+	(wire
+		(pts
+			(xy 200.66 55.88) (xy 205.74 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9ce1cb6-fcf9-4cb0-8b48-a710acac41e7")
+	)
+	(wire
+		(pts
+			(xy 213.36 55.88) (xy 218.44 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9315a81-d49f-48a5-a09c-976fea1fce51")
 	)
 	(wire
 		(pts
@@ -709,13 +940,13 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 60.96) (xy 195.58 60.96)
+			(xy 181.61 67.31) (xy 181.61 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d92589a3-ce96-4555-8fb7-a590f1071dd0")
+		(uuid "ce6a9fa2-5c00-4ca5-b887-a38d248f1b49")
 	)
 	(wire
 		(pts
@@ -729,7 +960,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 55.88) (xy 195.58 55.88)
+			(xy 191.77 55.88) (xy 200.66 55.88)
 		)
 		(stroke
 			(width 0)
@@ -790,7 +1021,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape passive)
-		(at 195.58 105.41 0)
+		(at 218.44 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -801,7 +1032,7 @@
 	)
 	(hierarchical_label "VDD"
 		(shape passive)
-		(at 195.58 55.88 0)
+		(at 218.44 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -812,7 +1043,7 @@
 	)
 	(hierarchical_label "VDA"
 		(shape passive)
-		(at 195.58 60.96 0)
+		(at 218.44 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -979,6 +1210,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 200.66 95.25 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79a0c555-fd68-441d-a6a5-90de1ead1db9")
+		(property "Reference" "C37"
+			(at 194.564 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.22"
+			(at 196.85 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 199.6948 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 200.66 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2f05539d-2d2d-480a-b3d4-ad0a594ea0f9")
+		)
+		(pin "1"
+			(uuid "e981e7f1-05ed-456a-96a0-698f99dc356c")
+		)
+		(instances
+			(project "3axis-magnitometer"
+				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/be6038e0-c8de-46ff-af13-cf0ae52994ef"
+					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Sensor_Motion:LSM6DS3")
 		(at 160.02 85.09 0)
 		(unit 1)
@@ -1086,6 +1384,140 @@
 			(project ""
 				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/be6038e0-c8de-46ff-af13-cf0ae52994ef"
 					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead")
+		(at 209.55 55.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a399331b-5c7a-4ec5-97fb-2027ce017fb1")
+		(property "Reference" "FB3"
+			(at 209.296 49.022 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FerriteBead"
+			(at 209.296 51.562 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 209.55 57.658 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 209.55 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a805257e-70ff-4cd3-a876-cb240160a11f")
+		)
+		(pin "1"
+			(uuid "c925a742-5199-4894-be1c-c1be44c5e682")
+		)
+		(instances
+			(project "3axis-magnitometer"
+				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/be6038e0-c8de-46ff-af13-cf0ae52994ef"
+					(reference "FB3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead")
+		(at 210.82 67.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c45ff8e1-25e9-4d69-a12c-72ad3cca0aaf")
+		(property "Reference" "FB4"
+			(at 210.566 60.452 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FerriteBead"
+			(at 210.566 62.992 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 210.82 69.088 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 210.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7356469a-49fc-42d9-9ef1-65cda5108ae8")
+		)
+		(pin "1"
+			(uuid "5848d945-a326-489f-86df-db37bdfde6be")
+		)
+		(instances
+			(project "3axis-magnitometer"
+				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/be6038e0-c8de-46ff-af13-cf0ae52994ef"
+					(reference "FB4")
 					(unit 1)
 				)
 			)
