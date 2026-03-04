@@ -1,4 +1,4 @@
-26708610422992893
+26710383029081831
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -61403,6 +61403,13 @@ heatsink
 0
 0
 0
+IONISTOR
+DSK
+SMD capacitor, aluminum electrolytic, Nichicon, 8.0x10mm
+IONISTOR
+0
+2
+2
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height

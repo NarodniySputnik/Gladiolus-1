@@ -5,183 +5,6 @@
 	(uuid "051bd5a1-fd18-4bd7-9a14-a1b599706985")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:Battery_Cell"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "BT"
-				(at 2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Battery_Cell"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single-cell battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "battery cell"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Battery_Cell_0_1"
-				(rectangle
-					(start -2.286 1.778)
-					(end 2.286 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.778) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.048) (xy 1.778 3.048)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.556) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Battery_Cell_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1189,22 +1012,10 @@
 		(uuid "46fbd03e-dfa6-413b-87e5-b265c50d67a9")
 	)
 	(junction
-		(at 124.46 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "77a1b7f7-97b1-4aef-ac50-6e9c28464c37")
-	)
-	(junction
 		(at 124.46 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "798c3353-d434-4cc2-87ca-a31adbeab826")
-	)
-	(junction
-		(at 86.36 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c23732fb-779a-4c18-a69f-79da41ab470b")
 	)
 	(junction
 		(at 86.36 106.68)
@@ -1278,7 +1089,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 87.63) (xy 86.36 97.79)
+			(xy 86.36 76.2) (xy 86.36 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1378,16 +1189,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 87.63) (xy 124.46 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96274200-0960-4a0d-9294-f925055e90e7")
-	)
-	(wire
-		(pts
 			(xy 124.46 76.2) (xy 127 76.2)
 		)
 		(stroke
@@ -1458,16 +1259,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 76.2) (xy 124.46 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dca00ee3-38a2-4d75-bfb0-fa29b2d20907")
-	)
-	(wire
-		(pts
 			(xy 144.78 76.2) (xy 147.32 76.2)
 		)
 		(stroke
@@ -1488,7 +1279,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 87.63) (xy 124.46 97.79)
+			(xy 124.46 76.2) (xy 124.46 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1505,26 +1296,6 @@
 			(type default)
 		)
 		(uuid "e67f5d80-a28f-46ad-af72-51a458818d0d")
-	)
-	(wire
-		(pts
-			(xy 86.36 76.2) (xy 86.36 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebd2a0de-9718-4712-8611-8ce62c6ed48b")
-	)
-	(wire
-		(pts
-			(xy 86.36 87.63) (xy 95.25 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa2fe8ba-b012-4a14-8b7f-9255aa15ff04")
 	)
 	(wire
 		(pts
@@ -1675,7 +1446,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_EuroQuartz_EQ161-2Pin_3.2x1.5mm"
+		(property "Footprint" "Crystal:Crystal_AT310_D3.0mm_L10.0mm_Horizontal_1EP_style2"
 			(at 100.33 111.76 0)
 			(effects
 				(font
@@ -2112,80 +1883,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 97.79 87.63 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9e2fae0b-9df3-48fc-b356-c6da21b737df")
-		(property "Reference" "BT1"
-			(at 99.6315 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Battery_Cell"
-			(at 99.6315 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Battery:Battery_Panasonic_CR2032-HFN_Horizontal_CircularHoles"
-			(at 99.314 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 99.314 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single-cell battery"
-			(at 97.79 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "acd9496e-a55a-4b13-92a2-e4a056a86c0e")
-		)
-		(pin "2"
-			(uuid "e32d215d-8872-44e9-b036-9071a788ce26")
-		)
-		(instances
-			(project "clock"
-				(path "/051bd5a1-fd18-4bd7-9a14-a1b599706985"
-					(reference "BT?")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/c590c88d-27c9-4e5a-a435-a42d9de70c1c/4936c154-a85e-4cc9-be3c-d9a8854356bc"
-					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 110.49 76.2 270)
 		(unit 1)
@@ -2211,7 +1908,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Battery:Battery_Panasonic_CR2032-HFN_Horizontal_CircularHoles"
+		(property "Footprint" "IONISTOR:DSK"
 			(at 106.68 77.1652 0)
 			(effects
 				(font
