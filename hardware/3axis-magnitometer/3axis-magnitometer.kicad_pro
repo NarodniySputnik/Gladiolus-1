@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.8
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,24 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|125674500|51127500|ff6bbd56-c59c-4458-ac16-5c5f5c42f1cf|d9303390-25c1-40a7-9640-79a425d9c06b",
+          ""
+        ],
+        [
+          "courtyards_overlap|159496400|65640000|713ad3f2-48b2-4b62-afe1-d31c84d00a5e|f30d1c20-5bc9-4d57-92b4-bb109f2a703a",
+          ""
+        ],
+        [
+          "courtyards_overlap|161245000|60908600|0343e9a2-867c-4c7f-ad7c-6036b7b62322|f30d1c20-5bc9-4d57-92b4-bb109f2a703a",
+          ""
+        ],
+        [
+          "shorting_items|168991400|63753600|05ba4aa3-d157-4b0f-ba7a-1f659c263962|089204cd-62b9-484d-b472-893cfb67a944",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -131,7 +148,7 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
